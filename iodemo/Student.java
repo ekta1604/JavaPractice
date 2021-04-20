@@ -36,6 +36,10 @@ public class Student implements Serializable
 	}
 	public void setStd(int std) {
 		this.std = std;
-	}	
+	}
+    public void scan() {
+    }
+    public void update() {
+    }	
 
 }

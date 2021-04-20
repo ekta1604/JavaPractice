@@ -1,4 +1,4 @@
-package collection.list;
+package collectionlist;
 import java.util.Scanner;
 public class Student {
     private int Rno;

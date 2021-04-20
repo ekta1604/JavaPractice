@@ -52,7 +52,6 @@ public class StudentDemo {
                 break;
 
                 case 4:
-                int i;
                 for(i=0;i<list.size();i++)
                 {
                     Student sdisp=list.get(i);
@@ -85,7 +84,7 @@ public class StudentDemo {
                 }
                 break;
 
-                case 6;
+                case 6:
                 System.out.println("System will bet excited whithin 5 sec");
                 System.exit(0);
                 break;
