@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Prime {
+    public static void main(String[] args) {
+        int n,counter=0;
+        
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the number till you want prime numbers:");
+        n = s.nextInt();
+        
+        boolean flag = false;
+        for (int i = 1;i <= n;i++){
+             for (int j = 2;j <= i / 2;j++){
+
+                if (i% j == 0){
+                    flag = true;
+                    break;
+                } 
+
+                 if (!flag){
+                    counter++;
+                 }
+        
+            }
+        }
+     System.out.println( "Total:"+counter );
+    }
+}
+   
