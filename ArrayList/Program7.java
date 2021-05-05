@@ -1,6 +1,5 @@
 package ArrayList;
 import java.util.ArrayList;
-import java.util.List;
 public class Program7 {
    public static void main(String[] args) {
       ArrayList<Integer> a = new ArrayList<Integer>();
