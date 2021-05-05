@@ -1,5 +1,6 @@
+package ArrayList;
+
 import java.util.ArrayList;
-import java.util.Collections;
 public class program19 {
   public static void main(String[] args) {
     ArrayList<Integer> colours = new ArrayList<Integer>(9);

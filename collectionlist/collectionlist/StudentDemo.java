@@ -3,6 +3,8 @@ package collectionlist;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// import Student;
+
 public class StudentDemo {
     public static void main(String[] args) {
         ArrayList<Student> list = new ArrayList<Student>();

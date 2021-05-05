@@ -1,3 +1,5 @@
+package ArrayList;
+
 import java.util.*;
 public class program10 {
 	public static void main(String args[])
@@ -13,7 +15,7 @@ public class program10 {
 
 		System.out.println("Before shuffling Arraylist:");
 
-		Iterator itr = al.iterator();
+		Iterator<String> itr = al.iterator();
 
 		while (itr.hasNext()) {
 			System.out.print(itr.next() + " ");

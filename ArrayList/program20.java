@@ -1,5 +1,6 @@
+package ArrayList;
+
 import java.util.ArrayList;
-import java.util.Collections;
 public class program20 {
   public static void main(String[] args)throws Exception
   {
