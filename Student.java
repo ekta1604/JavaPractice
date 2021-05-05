@@ -1,62 +1,63 @@
-import java.util.Scanner;
-public class Student {
-    private int Rno;
-    private String Name;
-    private int Std;
-    Scanner sc=new Scanner(System.in);
+public class Student implements Comparable<Student> 
+{
+	private int rno;
+	private String name;
+	private int std;
 
-    public Student() {
-    }
+	public Student() {
 
-    public Student(int Rno, String Name, int Std) {
-        this.Rno = Rno;
-        this.Name = Name;
-        this.Std = Std;
-    }
-
-    public int getRno() {
-        return Rno;
-    }
-
-    public void setRno(int Rno) {
-        this.Rno = Rno;
-    }
-
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String Name) {
-        this.Name = Name;
-    }
-
-    public int getstd() {
-        return Std;
-    }
-
-    public void setStd(int Std) {
-        this.Std = Std;
-    }
-    public void scan() 
-	{
-		System.out.print("Enter Rno : ");
-		Rno = sc.nextInt();
-		sc.nextLine();
-		System.out.print("Enter Name : ");
-		Name = sc.nextLine();
-		System.out.print("Enter Std : ");
-		Std = sc.nextInt();
 	}
-	public void update() 
-	{
-        sc.nextLine();
-		System.out.print("Enter Name : ");
-		Name = sc.nextLine();
-		System.out.print("Enter Std : ");
-		Std = sc.nextInt();
+
+	public Student(int rno, String name, int std) {
+		this.rno = rno;
+		this.name = name;
+		this.std = std;
 	}
-	public void disp() 
+
+	public void disp() {
+		System.out.println(rno + " " + name + " " + std);
+	}
+
+	public int getRno() {
+		return rno;
+	}
+
+	public void setRno(int rno) {
+		this.rno = rno;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getStd() {
+		return std;
+	}
+
+	public void setStd(int std) {
+		this.std = std;
+	}
+
+	@Override
+	public String toString() {
+		return rno + " " + name + " " + std;
+	}
+    public int compareTo(Student s) 
 	{
-		System.out.println(Rno + " " + Name + " " + Std);
+		if(std > s.std) 
+		{
+			return 1;
+		}else if(std < s.std) 
+		{
+			return -1;
+		}else 
+		{
+			return 0;
+		}
 	}
 }
+   
